@@ -14,9 +14,9 @@ As a freelance web developer, I want to generate a simple logo for my projects s
 - [Usage](#usage)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Testing](#testing)
-- [License](#license)
 - [Contributing](#contributing)
 - [Walkthrough Video](#walkthrough-video)
+- [Links](#links)
 
 ## Installation
 
@@ -57,10 +57,6 @@ npm test
 
 Ensure that all tests pass to verify the functionality of the logo generation process.
 
-## License
-
-This project is licensed under the MIT License.
-
 ## Contributing
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss changes.
@@ -68,3 +64,9 @@ Contributions are welcome! Please submit a pull request or open an issue to disc
 ## Walkthrough Video
 
 A walkthrough video demonstrating the functionality of the SVG-Logo-Spawner can be found at: [Video Link](your-video-link-here)
+
+## Links
+
+- [GitHub Repository](https://github.com/yourusername/SVG-Logo-Spawner)
+- [Jest Documentation](https://jestjs.io/docs/getting-started)
+- [Inquirer Documentation](https://github.com/SBoudrias/Inquirer.js)
