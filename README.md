@@ -67,6 +67,6 @@ A walkthrough video demonstrating the functionality of the SVG-Logo-Spawner can 
 
 ## Links
 
-- [GitHub Repository](https://github.com/yourusername/SVG-Logo-Spawner)
+- [GitHub Repository](https://github.com/awb2987/SVG-Logo-Spawner)
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
 - [Inquirer Documentation](https://github.com/SBoudrias/Inquirer.js)
