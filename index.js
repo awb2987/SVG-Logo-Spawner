@@ -1,12 +1,13 @@
-const fs = require('fs');
-const inquirer = require('inquirer');
-const { Circle, Triangle, Square } = require('./lib/shapes');
-const { getColorOrDefault } = require('./lib/shapeColor');
-const { getTextOrDefault } = require('./lib/text');
-const { getTextColorOrDefault } = require('./lib/textColor');
+const fs = require('fs'); // File system module for writing files
+const inquirer = require('inquirer'); // Module for prompting user input
+const { Circle, Triangle, Square } = require('./lib/shapes'); // Import shape classes
+const { getColorOrDefault } = require('./lib/shapeColor'); // Function to validate shape color
+const { getTextOrDefault } = require('./lib/text'); // Function to validate text input
+const { getTextColorOrDefault } = require('./lib/textColor'); // Function to validate text color
 
 // Function to prompt the user for their input
 async function promptUser() {
+  // Prompt for text input with a validation check
   const { text } = await inquirer.prompt({
     type: 'input',
     name: 'text',
@@ -14,12 +15,14 @@ async function promptUser() {
     validate: input => input.length <= 3 ? true : 'Text must be no more than 3 characters'
   });
 
+  // Prompt for text color input
   const { textColor } = await inquirer.prompt({
     type: 'input',
     name: 'textColor',
     message: 'Please enter text color (name or hex code):'
   });
 
+  // Prompt for shape selection from a list
   const { shape } = await inquirer.prompt({
     type: 'list',
     name: 'shape',
@@ -27,6 +30,7 @@ async function promptUser() {
     choices: ['circle', 'triangle', 'square']
   });
 
+  // Prompt for shape color input
   const { shapeColor } = await inquirer.prompt({
     type: 'input',
     name: 'shapeColor',
@@ -58,13 +62,13 @@ function createSVG({ text, textColor, shape, shapeColor }) {
       shapeInstance = new Square();
       break;
     default:
-      throw new Error('Invalid shape');
+      throw new Error('Invalid shape'); // Handle unexpected shape input
   }
 
   // Set the shape's color
   shapeInstance.setColor(shapeColor);
 
-  // Generate SVG content
+  // Generate SVG content using the shape instance and user-provided text
   return `
     <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
       ${shapeInstance.render()}
@@ -76,14 +80,14 @@ function createSVG({ text, textColor, shape, shapeColor }) {
 // Main function to run the application
 async function main() {
   try {
-    const answers = await promptUser();
-    const svg = createSVG(answers);
+    const answers = await promptUser(); // Get user input
+    const svg = createSVG(answers); // Create SVG from user input
 
     // Write the SVG to a file
     fs.writeFileSync('logo.svg', svg);
-    console.log('Generated logo.svg');
+    console.log('Generated logo.svg'); // Notify user of success
   } catch (error) {
-    console.error('Error:', error);
+    console.error('Error:', error); // Handle errors
   }
 }
 
