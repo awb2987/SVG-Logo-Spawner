@@ -63,7 +63,8 @@ Contributions are welcome! Please submit a pull request or open an issue to disc
 
 ## Walkthrough Video
 
-A walkthrough video demonstrating the functionality of the SVG-Logo-Spawner can be found at: [Video Link](https://drive.google.com/file/d/1760Wr9kXo5oifYR8MefNJlJkRTD4iOnh/view)
+-A walkthrough video demonstrating the functionality of the SVG-Logo-Spawner can be found at: [Video Link](https://drive.google.com/file/d/1760Wr9kXo5oifYR8MefNJlJkRTD4iOnh/view)
+-Backup walkthrough Video Link: [Backup Video Link](https://drive.google.com/file/d/1760Wr9kXo5oifYR8MefNJlJkRTD4iOnh/view?usp=sharing) 
 
 ## Links
 
