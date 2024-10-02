@@ -23,7 +23,7 @@ As a freelance web developer, I want to generate a simple logo for my projects s
 To get started, clone the repository and install the necessary packages:
 
 ```bash
-git clone https://github.com/yourusername/SVG-Logo-Spawner.git
+git clone https://github.com/awb2987/SVG-Logo-Spawner.git
 cd SVG-Logo-Spawner
 npm install
 ```
@@ -63,7 +63,7 @@ Contributions are welcome! Please submit a pull request or open an issue to disc
 
 ## Walkthrough Video
 
-A walkthrough video demonstrating the functionality of the SVG-Logo-Spawner can be found at: [Video Link](your-video-link-here)
+A walkthrough video demonstrating the functionality of the SVG-Logo-Spawner can be found at: [Video Link](https://drive.google.com/file/d/1760Wr9kXo5oifYR8MefNJlJkRTD4iOnh/view)
 
 ## Links
 
